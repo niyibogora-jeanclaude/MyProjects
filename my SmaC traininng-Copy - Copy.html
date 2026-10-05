@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Première page web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+    <style>
+        html {
+            background-color: rgb(244, 238, 238);
+            content-visibility: auto;
+        }
+
+        .nom {
+            font-weight: 200px;
+            font-family: Arial;
+        }
+
+        .en_tete {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            border-bottom: 0.5px solid rgb(32, 85, 244);
+            align-items: center;
+        }
+
+        .liste {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .connexion {
+            background-color: rgb(11, 11, 224);
+            color: azure;
+            border-width: 0px;
+            border-radius: 7px;
+            padding: 9px 16px;
+            cursor: pointer;
+            transition: 0.15s;
+        }
+
+        .connexion:hover {
+            opacity: 0.8;
+        }
+
+        .connexion:active {
+            opacity: 0.5;
+        }
+
+        .Section1 {
+            display: flex;
+            align-items: flex-end;
+            margin: 10px;
+            margin-bottom: 30px;
+            padding: 70px;
+            gap: 30px;
+            justify-content:top;
+        }
+        .titre_principal{
+            width: 600px;
+            font-size: 35px;
+        }
+        .my_image{
+            margin-top: 0px;
+            width: 100px;
+            height: 100px;
+            border-radius: 600px;
+            object-fit: cover;
+            object-position: top right;
+            border: 2px;
+            border-style: ridge solid;
+            border-color: rgb(137, 133, 86);
+            margin-bottom: 120px;
+            
+        }
+        .inscription {
+            background-color: rgb(11, 11, 224);
+            color: white;
+            border: 2px;
+            border-radius: 7px;
+            margin-right: 8px;
+            cursor: pointer;
+            border-radius: 7px;
+            padding: 9px 20px;
+            transition: 0.15s;
+        }
+
+        .inscription:hover {
+            opacity: 0.8;
+        }
+
+        .inscription:active {
+            opacity: 0.5;
+        }
+
+        .decouvrir {
+            background-color: rgb(248, 240, 240);
+            border: solid 0.5px rgb(11, 11, 224);
+            border-radius: 7px;
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 7.9px 20px;
+            transition: 0.15s;
+        }
+
+        .decouvrir:hover {
+            opacity: 0.8;
+        }
+
+        .decouvrir:active {
+            opacity: 0.5;
+        }
+
+        .section2 {
+            align-items: center;
+            padding: 30px 90px;
+            border-bottom: 1px solid #111827;
+        }
+
+        .titre2 {
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .fonctionnalite {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding-block: 10px 40px;
+
+        }
+        
+        button {
+            background-color: white;
+            padding: 40px;
+            text-align: center;
+            border: 1px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 5px;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .logo_StrengthOfMind{
+          border-radius: 50px;
+          border: 0.3px solid rgb(11, 11, 224);
+        }
+        .final_word {
+            text-align: center;
+            background-color: #3B82F6;
+            padding: 60px;
+            color: white;
+            font-family: Arial;
+            font-size: large;
+        }
+
+        .commencer {
+            background-color: #082a61;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            padding-inline: -5px;
+            cursor: pointer;
+            font-family: Arial;
+            transition: 0.15s;
+        }
+
+        .commencer:hover {
+            opacity: 0.8;
+        }
+
+        .commencer:active {
+            opacity: 0.5;
+        }
+
+        body {
+            font-family: Arial;
+            margin: 0px;
+        }
+        footer {
+            background-color: #111827;
+            padding: 15px 30px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="en_tete">
+            <h1 class="nom">SmaC</h1>
+            <ul class="liste">
+                <li>Acceuil</li>
+                <li>Fonctionnalités</li>
+                <section>
+                    <details>
+                        <summary>Qui sommes-nous?</summary>
+                        <p> My name is NIYIBOGORA Jean Claude i was born in burundi and i've gotten a chance
+                            recently i'm pursuing my university studies in ALGERIA in computer science field!
+                            <br>
+                            I have always been driven to create my webpage to make my businesses & projects
+                            over the world get known ;
+                        </p>
+                        <p>
+
+                            This is the beginning of my career, I ensure that with a
+                            obsinated
+                            heart everthing will be done perfectly!<br>
+                            welcome to my SmaC plateform which goes :"School
+                            manager_Claude".
+                        </p>
+                    </details>
+                </section>
+                <section>
+                    <details>
+                        <summary>
+                            Contacts
+                        </summary>
+                        <p>
+                            <li>Whatsapp : +213562414591</li>
+                            <li>Mobile : +213781021986</li>
+                            <li>Youtube channel: www.youtube.com/@Strength_of_mind-i3y</li>
+                            <li>E-mail adress : nibogorajeanclaude2003@gmail.com</li>
+                        </p>
+                    </details>
+                </section>
+
+            </ul>
+            <button class="connexion">Connexion</button>
+        </nav>
+    </header>
+    <section class="Section1">
+        <div>
+            <h1 class="titre_principal">Plateforme numérique intelligente conçue pour la gestion de votre école !</h1>
+            <p>Faciliter les processus d'inscription, suivez vos paiments scolaires en toute sécurité tout en
+                centralisant vos données.
+            </p>
+            <button class="inscription">S'inscrire maintenant</button>
+            <button class="decouvrir">
+                <a href="c:\Users\ShiftTech\Documents\Projet De Plateforme Numérique De Gestion Scolaire.pdf" ,
+                    text-decoration="none" , color="black" target="_blank">Découvrir</a>
+            </button>
+        </div>
+        <img class="my_image" src="c:\Users\ShiftTech\OneDrive\Images\PSX_20240601_235640.jpg" alt="Le conceveur du plateform">
+    </section>
+    <section class="section2">
+        <h2 class="titre2">Fonctionalités du plateforme</h2>
+        <div class="fonctionnalite">
+            <button>
+                <h3>Gestion des élèves</h3>
+                <p>centralisation complète.</p>
+            </button>
+            <button>
+                <h3>Inscription en ligne</h3>
+                <p>Processus rapide et fiable;
+                <ol></ol>
+                </p>
+            </button>
+            <button>
+                <h3>Paiement en ligne</h3>
+                <p>Service sécurisé de suivi des paiements.</p>
+            </button>
+            <button>
+                <h3>Tableaux de bord</h3>
+                <p>Statistiques et indicateurs en temps réel.</p>
+            </button>
+        </div>
+    </section>
+    <section>
+      <section class="section2">
+          <h1 class="titre2">Qui sommes-nous ?</h1>
+          <img class="logo_StrengthOfMind" src="d:\MUSICS\my pictures\MON LOGO.png" alt="Le conceveur du plateform"
+          width="250">
+
+
+          <p>As the world is undergoing a rapid digital transformation across all sectors, including education. In Burundi, the educational system faces several challenges: limited access to pedagogical resources, the lack of a centralized tool for the digital management of courses, exams, and results, and communication difficulties between students, teachers, and educational authorities. The Ministry of Education seeks to address these needs by developing a national educational platform accompanied by an application. 
+          </p>
+
+
+          <h3>Objectives</h3>
+          <p>It is through this occasion we decided to create a national digital platform for learning and school management that will provide official pedagogical resources;
+          Facilitate communication between students, teachers, and administration.
+          Digitize exams, grades, and report cards.
+          Offer continuous online training.
+          </p>
+          <table>
+            <tr>
+              <td>Our whatsapp : </td>
+              <td>0562414591</td>
+            </tr>
+            <tr>
+              <td>Mobile : </td>
+              <td>0781021986</td>
+            </tr>
+            <tr>
+              <td>Email : </td>
+              <td>nibogorajeanclaude@gmail.com</td>
+            <tr>
+              <td>Youtube : </td>
+              <td>www.youtube.com/@Strength_of_mind-i3y</td>
+            </tr>
+          </table>
+        </section>
+    </section>
+    <nav class="final_word">
+        <h2>Prêt à digitaliser votre école ?</h2>
+        <button class="commencer">
+            Commencer maintenant
+        </button>
+    </nav>
+    <footer>
+        <p>© 2026 SmaC-Tout droit reservé.</p>
+    </footer>
+</body>
+
+</html>

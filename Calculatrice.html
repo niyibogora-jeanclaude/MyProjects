@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+  <meta charset="UTF-8">
+  <style>
+    .title {
+      font-size: larger;
+      padding-left: 120px;
+      margin-bottom: 10px;
+      font-family: Georgia, serif;
+
+    }
+
+    .principal {
+      background-color: rgb(240, 240, 240);
+      width: 320px;
+      padding: 3px;
+    }
+
+    .spaceholder {
+      background-color: white;
+      height: 80px;
+      width: 310px;
+      margin-left: 2px;
+      margin-right: 10px;
+      border: 2px solid rgb(224, 215, 215);
+      font-size: 30px;
+      padding-left: 5px;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+      height: 350px;
+      padding: 5px;
+
+
+    }
+
+    button {
+      padding: 0%;
+      border-radius: 100px;
+      border: 2px solid rgb(224, 215, 215);
+      ;
+      transition: 0.10s;
+      font-size: larger;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    button:active {
+      background-color: rgb(85, 85, 85);
+      ;
+      opacity: 0.8;
+    }
+
+    .ac {
+      background-color: rgb(152, 196, 235);
+    }
+
+    .equal_sign {
+      background-color: rgb(98, 58, 104);
+      color: white;
+    }
+
+    .backarrow {
+      font-size: large;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="principal">
+
+    <div class="title">Calculator</div>
+
+    <div><input class="spaceholder" type=""></div>
+
+    <div class="content">
+      <!--AC button-->
+      <button class="ac" onclick="
+        calculation='';
+        console.log('The operation has been deleted successfully!');  
+      ">AC</button>
+
+      <!--()button-->
+      <button class="ac">( )</button>
+
+      <!-- %button-->
+      <button class="ac">%</button>
+
+
+      <!-- division button-->
+      <button class="ac" onclick="
+           calculation+= '/';
+           console.log(`The calculation is now : ${calculation}`);
+          ">&divide</button>
+
+      <!--7 button-->
+      <BUtton onclick="UpdatCalculation(7);">7</BUtton>
+
+      <!--8 button-->
+      <BUtton onclick="UpdatCalculation(8);">8</BUtton>
+
+      <!--9button-->
+      <BUtton onclick="UpdatCalculation(9);">9</BUtton>
+      <!--X button-->
+      <BUtton class="ac" onclick="
+           calculation+='*';
+           console.log(`The calculation is now : ${calculation}`);
+          ">X</BUtton>
+
+      <!--4button-->
+      <BUtton onclick="UpdatCalculation(4);">4</BUtton>
+
+      <!--5button-->
+      <button onclick="UpdatCalculation(5);">5</button>
+
+      <!--6button-->
+      <button onclick="UpdatCalculation(6);">6</button>
+
+      <!--(- button)-->
+      <button class="ac" onclick="
+           calculation+='-';
+           console.log(`The calculation is now : ${calculation}`);
+          ">-</button>
+      <!--1 button-->
+      <button onclick="UpdatCalculation(1);">1</button>
+
+      <!--2button-->
+      <BUtton onclick="UpdatCalculation(2);">2</BUtton>
+
+      <!--3button-->
+      <button onclick="UpdatCalculation(3);">3</button>
+
+      <!--(+button)-->
+      <button class="ac" onclick="
+           calculation+='+';
+           console.log(`The calculation is now : ${calculation}`);
+          ">+</button>
+
+      <!--0button-->
+      <button onclick="UpdatCalculation(0);">0</button>
+
+      <!-- virgule-->
+      <BUtton onclick="UpdatCalculation('.');"> . </BUtton>
+
+      <!--delete button-->
+      <button class="backarrow" onclick="
+          calculation--;
+          console.log(`The calculation is now : ${calculation}`);
+         ">&#9003</button>
+
+
+      <button class="equal_sign" onclick="
+          calculation = eval(calculation);
+          console.log(`The result to the operation is : ${calculation}`);
+          ">=</button>
+    </div>
+  </div>
+
+  <script>
+    let calculation = '';
+    function UpdatCalculation(name){
+      calculation+=name;
+      console.log(`The calculation is now : ${calculation}`);
+    }
+
+  </script>
+</body>
+
+</html>

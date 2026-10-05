@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Première page web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+    <style>
+        html {
+            background-color: rgb(244, 238, 238);
+            content-visibility: auto;
+        }
+
+        .nom {
+            font-weight: 200px;
+            font-family: Arial;
+        }
+
+        .en_tete {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            border-bottom: 0.5px solid rgb(32, 85, 244);
+            align-items: center;
+        }
+
+        .liste {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .connexion {
+            background-color: rgb(11, 11, 224);
+            color: azure;
+            border-width: 0px;
+            border-radius: 7px;
+            padding: 9px 16px;
+            cursor: pointer;
+            transition: 0.15s;
+        }
+
+        .connexion:hover {
+            opacity: 0.8;
+        }
+
+        .connexion:active {
+            opacity: 0.5;
+        }
+
+        .Section1 {
+            display: flex;
+            
+            margin: 20px;
+            margin-top: 0px;
+            padding: 40px 70px;
+            gap: 50px;
+            justify-content: space-between 40px;
+        }
+        .section2 {
+            align-items: center;
+            padding: 20px 90px;
+            border-bottom: 1px solid #111827;
+            margin-top: 0px;
+        }
+        .titre2 {
+            text-align: center;       
+        }
+
+        .final_word {
+            text-align: center;
+            background-color: #3B82F6;
+            padding: 60px;
+            color: white;
+            font-family: Arial;
+            font-size: large;
+        }
+
+        .commencer {
+            background-color: #082a61;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            padding-inline: -5px;
+            cursor: pointer;
+            font-family: Arial;
+            transition: 0.15s;
+        }
+
+        .commencer:hover {
+            opacity: 0.8;
+        }
+
+        .commencer:active {
+            opacity: 0.5;
+        }
+
+        body {
+            font-family: Arial;
+            margin: 0px;
+        }
+
+        footer {
+            background-color: #111827;
+            padding: 15px 30px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="en_tete">
+            <h1 class="nom">SmaC</h1>
+            <ul class="liste">
+                <li>Acceuil</li>
+                <li>Fonctionnalités</li>
+                <li>Qui sommes nous?</li>
+                <li>Contacts</li>
+            </ul>
+            <button class="connexion">Connexion</button>
+        </nav>
+    </header>
+    <section class="Section1">
+        
+        <h1>Plateforme numérique intelligente conçue pour la gestion de votre école !</h1>
+        
+        <img src="c:\Users\ShiftTech\Pictures\Facebook_files\326112162_956545298665716_682967704718471835_n.jpg" alt="Le conceveur du plateform"
+            height="170" width="200">
+    </section>
+    <section class="section2">
+        <h2 class="titre2">Fonctionalités du plateforme</h2>
+        <div class="fonctionnalite">
+           
+            <h3>Gestion des élèves</h3>
+            <p>Centralisation complète de tous les donnéés de votre école.<br>
+                Suivie en temps réel de la qualité de formation donnéé par les enseignant à travers les tableaux de bord;
+                gestion sécurisée des utilisateurs et des rôles ; etc.
+            </p>
+            
+            
+            <h3>Inscription en ligne</h3>
+            <p>Processus rapide et fiable te permettra à s'inscrire dans une école sans devoir se déplacer avec des document physique mais aussi avoir un reçu confirmant l'inscription;<br>
+                création et suivi des dossiers des élèves;etc
+                
+            </p>
+            
+            
+            <h3>Paiement en ligne</h3>
+            <p>Service sécurisé de suivi des paiements.<br>
+                Avoir la possibilité à un élève de pouvoir payer du minerval ou tout autre raison de paiement.                    
+            </p>
+            
+            
+            <h3>Tableaux de bord</h3>
+            <p>Statistiques et indicateurs en temps réel.<br>
+                La facilité aux directeur de l'école à visualiser les compétences de ses enseignants;
+                Analyser le comportement des étudiants pendant les cours à travers les commentaires des enseignants;etc
+            </p>
+           
+        </div>
+    </section>
+    <nav class="final_word">
+        <h2>Prêt à digitaliser votre école ?</h2>
+        <button class="commencer">
+            Commencer maintenant
+        </button>
+    </nav>
+    <footer>
+        <p>© 2026 SmaC-Tout droit reservé.</p>
+    </footer>
+</body>
+
+</html>

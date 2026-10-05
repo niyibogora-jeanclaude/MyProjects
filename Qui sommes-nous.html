@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="utf-8">
+      <title>Première page web</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+      <style>
+        html {
+          background-color: rgb(244, 238, 238);
+          content-visibility: auto;
+        }
+
+        .nom {
+          font-weight: 200px;
+          font-family: Arial;
+        }
+
+        .header {
+          background-color: white;
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 40px;
+          border-bottom: 0.5px solid rgb(32, 85, 244);
+          align-items: center;
+        }
+        .title1{
+          width: 60%;
+        }
+        .liste {
+          display: flex;
+          justify-content: space-between;
+          gap: 30px;
+          list-style: none;
+        }
+
+        .connexion {
+          background-color: rgb(11, 11, 224);
+          color: azure;
+          border-width: 0px;
+          border-radius: 7px;
+          padding: 9px 16px;
+          cursor: pointer;
+          transition: 0.15s;
+        }
+
+        .connexion:hover {
+          opacity: 0.8;
+        }
+
+        .connexion:active {
+          opacity: 0.5;
+        }
+
+        .Section1 {
+          align-items: flex-end;
+          margin-top: 0%;
+          margin: 10px;
+          padding: 70px;
+          gap: 50px;
+          justify-content: space-between 40px;
+        }
+        .section2 {
+          align-items: center;
+          padding: 30px 90px;
+          border-bottom: 1px solid #111827;
+        }
+        .final_word {
+          text-align: center;
+          background-color: #3B82F6;
+          padding: 60px;
+          color: white;
+          font-family: Arial;
+          font-size: large;
+        }
+
+        .commencer {
+          background-color: #082a61;
+          color: white;
+          border-radius: 5px;
+          border: none;
+          padding: 10px;
+          padding-inline: -5px;
+          cursor: pointer;
+          font-family: Arial;
+          transition: 0.15s;
+        }
+
+        .commencer:hover {
+          opacity: 0.8;
+        }
+
+        .commencer:active {
+          opacity: 0.5;
+        }
+
+        body {
+          font-family: Arial;
+          margin: 0px;
+        }
+
+        footer {
+          background-color: #111827;
+          padding: 15px 30px;
+          color: white;
+          text-align: center;
+        }
+      </style>
+    </head>
+
+    <body>
+      <header class="header">
+        <h1 class="nom">SmaC</h1>
+        <ul class="liste">
+          <li>Acceuil</li>
+          <li>Fonctionnalités</li>
+          <li>Qui sommes-nous?</li>
+          <li>Contacts</li>
+        </ul>
+        <button class="connexion">Connexion</button>
+      </header>
+
+      <main>
+        <section class="Section1">
+          <h1 class="title1">Plateforme numérique intelligente conçue pour la gestion de votre école !</h1>
+          <img src="d:\MUSICS\my pictures\MON LOGO.png" alt="Le conceveur du plateform"
+          width="250">
+
+
+          <p>As the world is undergoing a rapid digital transformation across all sectors, including education. In Burundi, the educational system faces several challenges: limited access to pedagogical resources, the lack of a centralized tool for the digital management of courses, exams, and results, and communication difficulties between students, teachers, and educational authorities. The Ministry of Education seeks to address these needs by developing a national educational platform accompanied by an application. 
+          </p>
+
+
+          <h3>Objectives</h3>
+          <p>It is through this occasion we decided to create a national digital platform for learning and school management that will provide official pedagogical resources;
+          Facilitate communication between students, teachers, and administration.
+          Digitize exams, grades, and report cards.
+          Offer continuous online training.
+          </p>
+          <table>
+            <tr>
+              <td>Our whatsapp : </td>
+              <td>0562414591</td>
+            </tr>
+            <tr>
+              <td>Mobile : </td>
+              <td>0781021986</td>
+            </tr>
+            <tr>
+              <td>Email : </td>
+              <td>nibogorajeanclaude@gmail.com</td>
+            <tr>
+              <td>Youtube : </td>
+              <td>www.youtube.com/@Strength_of_mind-i3y</td>
+            </tr>
+          </table>
+        </section>
+      </main>
+
+      <nav class="final_word">
+        <h2>Prêt à digitaliser votre école ?</h2>
+        <button class="commencer">
+          Commencer maintenant
+        </button>
+      </nav>
+      <footer>
+        <p>© 2026 SmaC-Tout droit reservé.</p>
+      </footer>
+  </body>
+</html>
